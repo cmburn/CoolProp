@@ -1,7 +1,7 @@
 #include <numeric>
 #include "Helmholtz.h"
 
-#ifdef __ANDROID__
+#if defined(__OpenBSD__) || defined(__ANDROID__)
   #undef _A
   #undef _B
   #undef _C
